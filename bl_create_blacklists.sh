@@ -3,7 +3,13 @@
 # w debianie zamienic mawk na 
 # apt-get install gawk
 
-saveTo=/var/www
+saveTo=$1
+
+if [ -z $1 ] ; then
+  echo 'Nie podales sciezki, uzywam domyslnej /var/www ...'
+  saveTo=/var/www
+fi
+
 now=$(date);
 host=$(hostname);
 
