@@ -24,12 +24,6 @@ test1:
     - echo "Do a test here"
     - echo "For example run a test suite"
    
-test2:
-  stage: test
-  script: 
-    - echo "Do another parallel test here"
-    - echo "For example run a lint test"
-   
 deploy1:
   stage: deploy
   script:
